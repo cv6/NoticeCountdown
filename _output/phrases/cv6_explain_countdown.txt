@@ -1,0 +1,1 @@
+If you specify an end date in the page criteria, you can put a {countdown} placeholder inside the notice which will be replaced by a day counter to the entered end date.

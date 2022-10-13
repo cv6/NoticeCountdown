@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="cv6_badge" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays in the default badge styling. <span class="cv6-countdown cv6-countdown--badge">276</span>]]></phrase>
+  <phrase title="cv6_bigplate" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays as a bilg plate at the right side of the Panel. ]]></phrase>
+  <phrase title="cv6_custom" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays in the custom styling from Style Settings. <span class="cv6-countdown cv6-countdown--custom">56</span>]]></phrase>
+  <phrase title="cv6_explain_countdown" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[If you specify an end date in the page criteria, you can put a {countdown} placeholder inside the notice which will be replaced by a day counter to the entered end date.]]></phrase>
+  <phrase title="cv6_include_countdown" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Display Countdown]]></phrase>
+  <phrase title="cv6_no_or_default_styling" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays in the default text styling.]]></phrase>
+  <phrase title="cv6_plate" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Display as a small plate. <span class="cv6-countdown cv6-countdown--plate">12</span>]]></phrase>
+  <phrase title="cv6_with_icon" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Display with a small calendar icon <span class="cv6-countdown cv6-countdown--icon">5</span>]]></phrase>
+  <phrase title="style_prop.cv6CountdownCustom" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Custom notice coundtown design]]></phrase>
+  <phrase title="style_prop_desc.cv6CountdownCustom" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[here you can control the custom design of the day countdown inside a notice]]></phrase>
+</phrases>

@@ -1,0 +1,1 @@
+Display with a small calendar icon <span class="cv6-countdown cv6-countdown--icon">5</span>

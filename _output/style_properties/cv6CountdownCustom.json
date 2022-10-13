@@ -1,0 +1,24 @@
+{
+    "group_name": "misc",
+    "title": "Custom notice coundtown design",
+    "description": "here you can control the custom design of the day countdown inside a notice",
+    "property_type": "css",
+    "css_components": [
+        "text",
+        "background",
+        "border",
+        "border_radius",
+        "padding",
+        "extra"
+    ],
+    "value_type": "",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "color": "@xf-textColorAccentContent",
+        "font-weight": "@xf-fontWeightHeavy",
+        "font-style": "italic"
+    },
+    "display_order": 36000
+}

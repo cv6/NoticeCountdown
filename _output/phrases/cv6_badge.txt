@@ -1,0 +1,1 @@
+Displays in the default badge styling. <span class="cv6-countdown cv6-countdown--badge">276</span>

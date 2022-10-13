@@ -1,0 +1,1 @@
+here you can control the custom design of the day countdown inside a notice

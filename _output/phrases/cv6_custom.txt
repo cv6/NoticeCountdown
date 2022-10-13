@@ -1,0 +1,1 @@
+Displays in the custom styling from Style Settings. <span class="cv6-countdown cv6-countdown--custom">56</span>

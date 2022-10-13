@@ -1,0 +1,12 @@
+{
+    "admin/cv6_notice_macros.html": {
+        "version_id": 1000051,
+        "version_string": "1.0.0 Release Candidate 1",
+        "hash": "c3e06c825ba3790bb6d95f42b80d75cf"
+    },
+    "public/cv6_countdown.less": {
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "886f0a9012d6307e54f0425e1a7f15bc"
+    }
+}

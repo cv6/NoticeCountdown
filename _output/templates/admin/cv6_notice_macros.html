@@ -1,0 +1,19 @@
+<xf:macro name="countdown" arg-notice="!">
+	<xf:css src="public:cv6_countdown.less" />
+	<xf:radiorow 
+		name="cv6_countdown" 
+		value="{$notice.cv6_countdown}" 
+		label="{{ phrase('cv6_include_countdown') }}"
+		explain="{{ phrase('cv6_explain_countdown') }}"
+	>
+
+		<xf:option value="no" label="{{ phrase('cv6_do_not_display_countdown') }}" />
+		<xf:option value="default" label="{{ phrase('cv6_no_or_default_styling') }}" />
+		<xf:option value="plate" label="{{ phrase('cv6_plate') }}" />
+		<xf:option value="badge" label="{{ phrase('cv6_badge') }}" />
+		<xf:option value="icon" label="{{ phrase('cv6_with_icon') }}" />
+		<xf:option value="custom" label="{{ phrase('cv6_custom') }}" />
+		<xf:option value="bigplate" label="{{ phrase('cv6_bigplate') }}" />
+
+	</xf:radiorow>				
+</xf:macro>

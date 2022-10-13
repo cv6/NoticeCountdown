@@ -1,0 +1,1 @@
+Display as a small plate. <span class="cv6-countdown cv6-countdown--plate">12</span>

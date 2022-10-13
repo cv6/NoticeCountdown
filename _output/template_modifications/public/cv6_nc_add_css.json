@@ -1,0 +1,9 @@
+{
+    "template": "notice_macros",
+    "description": "Adds CSS when needed",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<div class=\"notice-content\">",
+    "replace": "<xf:if is=\"{$notice.cv6_countdown}\">\n\t<xf:css src=\"cv6_countdown.less\" />\n</xf:if>\n$0"
+}

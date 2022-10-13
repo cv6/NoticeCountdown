@@ -1,0 +1,36 @@
+// display definition
+.cv6-countdown {
+    
+    &.cv6-countdown--icon {
+        font-weight: bold;
+        &:before {
+            .m-faBase();
+            .m-faContent(@fa-var-calendar-day);
+		}
+    }
+    &.cv6-countdown--badge {
+        .xf-badge();
+        padding: @xf-paddingSmall @xf-paddingMedium;
+    }
+    &.cv6-countdown--plate,
+    &.cv6-countdown--bigplate {
+        font-weight: bold;  
+        color: #333;
+        background-color: #000000;
+        background-image: linear-gradient(315deg, #101010 0%, #7f8c8d 74%);
+        text-shadow: 1px 1px 0px #EEEEEE;
+        padding: @xf-paddingSmall @xf-paddingMedium;
+        border-radius: @xf-borderRadiusMedium;
+        border: @xf-borderSize @xf-borderColor;
+    }
+    &.cv6-countdown--bigplate {
+        font-size: 3em;
+        display: block;
+        float: right;
+        margin: 5px;
+    }
+
+    &.cv6-countdown--custom {
+        .xf-cv6CountdownCustom();
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "template": "notice_edit",
+    "description": "Add countdown options",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:radiorow name=\"display_image\" value=\"{$notice.display_image}\"",
+    "replace": "<xf:macro name=\"countdown\" template=\"cv6_notice_macros\" arg-notice=\"{$notice}\" />\n$0"
+}

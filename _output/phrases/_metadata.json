@@ -1,0 +1,68 @@
+{
+    "cv6_badge.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "3d03ad3602035ff71df70ac9291a70d9"
+    },
+    "cv6_bigplate.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "90de0a5c73fd9a67d4d23775ad5f63cf"
+    },
+    "cv6_custom.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "8e5ee7f6b6b895f1a2958c707b3c2b2d"
+    },
+    "cv6_do_not_display_countdown.txt": {
+        "global_cache": false,
+        "version_id": 1000051,
+        "version_string": "1.0.0 Release Candidate 1",
+        "hash": "77192ca882e37a9a09c8309240379b69"
+    },
+    "cv6_explain_countdown.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "1e24160c40cfcd131327188b3d5962cd"
+    },
+    "cv6_include_countdown.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "71b9466ea28ec0f8419f65457bf88583"
+    },
+    "cv6_no_or_default_styling.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "89b2c2024fa5728e36bde0fea11d4478"
+    },
+    "cv6_plate.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "ecdb0e0f8aba469eb3ff2f51d543419d"
+    },
+    "cv6_with_icon.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "99f60279d4b6dd7e33b60f51fe6e193e"
+    },
+    "style_prop.cv6CountdownCustom.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "f5e8010596373e87e4999bfc52efd8ad"
+    },
+    "style_prop_desc.cv6CountdownCustom.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "e556fb67aed8c8f68ec3ca2c8075576e"
+    }
+}

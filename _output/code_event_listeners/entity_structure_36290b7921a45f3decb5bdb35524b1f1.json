@@ -1,0 +1,9 @@
+{
+    "event_id": "entity_structure",
+    "execute_order": 10,
+    "callback_class": "cv6\\NoticeCountdown\\Listener",
+    "callback_method": "noticeEntityStructure",
+    "active": true,
+    "hint": "XF\\Entity\\Notice",
+    "description": ""
+}

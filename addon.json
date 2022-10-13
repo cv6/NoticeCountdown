@@ -1,0 +1,25 @@
+{
+    "legacy_addon_id": "",
+    "title": "[cv6] Notice Countdown",
+    "description": "Adds a countdown to notices",
+    "version_id": 1000051,
+    "version_string": "1.0.0 Release Candidate 1",
+    "dev": "Hoffi",
+    "dev_url": "https://xenforo.com/community/members/hoffi.214/",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": {
+        "Donate to Hoffi": "https://paypal.me/blutschwert/5"
+    },
+    "require": {
+        "XF": [
+            2010010,
+            "XenForo 2.1.0+"
+        ],
+        "php": [
+            "7.2.0",
+            "PHP 7.2.0+"
+        ]
+    },
+    "icon": "logo-cv6.png"
+}
