@@ -12,26 +12,25 @@ class Notice extends XFCP_Notice
 		$form = parent::noticeSaveProcess($notice);
 
 		$input = $this->filter([
-			'cv6_countdown' => 'str'
+			'cv6_countdown' => 'str',
+			'page_criteria' => 'array'
 		]);
 
-		$form->basicEntitySave($notice, $input);
+		if (empty($input['cv6_countdown']))
+		{
+			$input['cv6_countdown'] = 'no';	
+		}
+
+		if ($input['cv6_countdown'] != 'no' && array_key_exists('before', $input['page_criteria']) && array_key_exists('rule', $input['page_criteria']['before']) && $input['page_criteria']['before']['rule'] == 'before')
+		{
+			$form->basicEntitySave($notice, $input);
+		}
+		else
+		{
+			$form->logError('No End Date for Countdown','cv6_countdown');
+		}
 
 		return $form;
 	}
-
-	protected function noticeAddEdit(\XF\Entity\Notice $notice)
-	{
-		$reply = parent::noticeAddEdit($notice);
-
-		if ($reply instanceof \XF\Mvc\Reply\View)
-		{
-			$reply->setParams([
-				'cv6_countdown' => 'no'
-			]);
-		}
-
-		return $reply;
-    }    
 
 }

@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="admin" title="cv6_notice_macros" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<xf:macro name="countdown" arg-notice="!">
+  <template type="admin" title="cv6_notice_macros" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:macro name="countdown" arg-notice="!">
 	<xf:css src="public:cv6_countdown.less" />
-	<xf:radiorow 
-		name="cv6_countdown" 
-		value="{$notice.cv6_countdown}" 
+	<xf:checkboxrow 
 		label="{{ phrase('cv6_include_countdown') }}"
-		explain="{{ phrase('cv6_explain_countdown') }}"
+		explain="{{ phrase('cv6_explain_countdown') }}  {$notice.cv6_countdown}"
 	>
-
-		<xf:option value="default" label="{{ phrase('cv6_no_or_default_styling') }}" />
-		<xf:option value="plate" label="{{ phrase('cv6_plate') }}" />
-		<xf:option value="badge" label="{{ phrase('cv6_badge') }}" />
-		<xf:option value="icon" label="{{ phrase('cv6_with_icon') }}" />
-		<xf:option value="custom" label="{{ phrase('cv6_custom') }}" />
-		<xf:option value="bigplate" label="{{ phrase('cv6_bigplate') }}" />
-
-	</xf:radiorow>				
+		<xf:option value="no" label="{{ phrase('cv6_do_not_display_countdown') }}" selected="{{ ( $notice.cv6_countdown=='no' || $notice.isInsert() ) ? '' : 'selected' }}" data-hide="true">
+			<xf:dependent>
+				<xf:radio name="cv6_countdown" value="{$notice.cv6_countdown}"> 
+					<xf:option value="default" label="{{ phrase('cv6_no_or_default_styling') }}" />
+					<xf:option value="plate" label="{{ phrase('cv6_plate') }}" />
+					<xf:option value="badge" label="{{ phrase('cv6_badge') }}" />
+					<xf:option value="icon" label="{{ phrase('cv6_with_icon') }}" />
+					<xf:option value="custom" label="{{ phrase('cv6_custom') }}" />
+					<xf:option value="bigplate" label="{{ phrase('cv6_bigplate') }}" />
+				</xf:radio>
+			</xf:dependent>
+		</xf:option>
+	</xf:checkboxrow>
 </xf:macro>]]></template>
-  <template type="public" title="cv6_countdown.less" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[// display definition
+  <template type="public" title="cv6_countdown.less" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[// display definition
 .cv6-countdown {
     
     &.cv6-countdown--icon {
@@ -36,8 +38,9 @@
     &.cv6-countdown--bigplate {
         font-weight: bold;  
         color: #333;
-        background-color: #666;
-        text-shadow: 0px 1px 0px @xf-borderColor;
+        background-color: #000000;
+        background-image: linear-gradient(315deg, #101010 0%, #7f8c8d 74%);
+        text-shadow: 1px 1px 0px #EEEEEE;
         padding: @xf-paddingSmall @xf-paddingMedium;
         border-radius: @xf-borderRadiusMedium;
         border: @xf-borderSize @xf-borderColor;

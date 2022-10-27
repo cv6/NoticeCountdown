@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
   <phrase title="cv6_badge" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays in the default badge styling. <span class="cv6-countdown cv6-countdown--badge">276</span>]]></phrase>
-  <phrase title="cv6_bigplate" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays as a bilg plate at the right side of the Panel. ]]></phrase>
+  <phrase title="cv6_bigplate" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Displays as a big plate at the right side of the Panel. ]]></phrase>
   <phrase title="cv6_custom" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays in the custom styling from Style Settings. <span class="cv6-countdown cv6-countdown--custom">56</span>]]></phrase>
+  <phrase title="cv6_do_not_display_countdown" version_id="1000051" version_string="1.0.0 Release Candidate 1"><![CDATA[Do not display any countdown.]]></phrase>
   <phrase title="cv6_explain_countdown" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[If you specify an end date in the page criteria, you can put a {countdown} placeholder inside the notice which will be replaced by a day counter to the entered end date.]]></phrase>
   <phrase title="cv6_include_countdown" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Display Countdown]]></phrase>
   <phrase title="cv6_no_or_default_styling" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Displays in the default text styling.]]></phrase>

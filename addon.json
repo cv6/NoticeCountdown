@@ -2,8 +2,8 @@
     "legacy_addon_id": "",
     "title": "[cv6] Notice Countdown",
     "description": "Adds a countdown to notices",
-    "version_id": 1000051,
-    "version_string": "1.0.0 Release Candidate 1",
+    "version_id": 1000070,
+    "version_string": "1.0.0",
     "dev": "Hoffi",
     "dev_url": "https://xenforo.com/community/members/hoffi.214/",
     "faq_url": "",
@@ -13,8 +13,8 @@
     },
     "require": {
         "XF": [
-            2010010,
-            "XenForo 2.1.0+"
+            2020010,
+            "XenForo 2.2.0+"
         ],
         "php": [
             "7.2.0",

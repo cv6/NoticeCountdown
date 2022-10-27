@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "<xf:radiorow name=\"display_image\" value=\"{$notice.display_image}\"",
-    "replace": "<xf:macro name=\"countdown\" template=\"cv6_notice_macros\" arg-notice=\"{$notice}\" />\n$0"
+    "replace": "<xf:macro name=\"cv6_notice_macros::countdown\" arg-notice=\"{$notice}\" />\n$0"
 }

@@ -2,12 +2,12 @@
 <template_modifications>
   <modification type="admin" template="notice_edit" modification_key="cv6_nc_add_countdown_field" description="Add countdown options" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<xf:radiorow name="display_image" value="{$notice.display_image}"]]></find>
-    <replace><![CDATA[<xf:macro name="countdown" template="cv6_notice_macros" arg-notice="{$notice}" />
+    <replace><![CDATA[<xf:macro name="cv6_notice_macros::countdown" arg-notice="{$notice}" />
 $0]]></replace>
   </modification>
   <modification type="public" template="notice_macros" modification_key="cv6_nc_add_css" description="Adds CSS when needed" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<div class="notice-content">]]></find>
-    <replace><![CDATA[<xf:if is="{$notice.cv6_countdown}">
+    <replace><![CDATA[<xf:if is="{$notice.cv6_countdown} != 'no'">
 	<xf:css src="cv6_countdown.less" />
 </xf:if>
 $0]]></replace>
