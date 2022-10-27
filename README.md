@@ -12,7 +12,9 @@ This AddOn allows you to add a day countdown till the selected end date in the p
 As the target the before page criteria is used, so the counter should never be a zero.
 
 
-## changelog 1.0
+## changelog
+
+### 1.0.0
 
 - optimized admin implementation
 - added error message if countdown is selected without an end date
