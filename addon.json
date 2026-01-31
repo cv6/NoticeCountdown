@@ -1,25 +1,25 @@
 {
     "legacy_addon_id": "",
-    "title": "[cv6] Notice Countdown",
+    "title": "[DD] Notice Countdown",
     "description": "Adds a countdown to notices",
-    "version_id": 1000070,
-    "version_string": "1.0.0",
+    "version_id": 1000370,
+    "version_string": "1.0.3",
     "dev": "Hoffi",
-    "dev_url": "https://xenforo.com/community/members/hoffi.214/",
-    "faq_url": "",
-    "support_url": "",
+    "dev_url": "https://forum.dice-dragons.de/mitglieder/hoffi.1/",
+    "faq_url": "https://forum.dice-dragons.de/downloads/notice-countdown.151/",
+    "support_url": "https://forum.dice-dragons.de/forum/notice-countdown/",
     "extra_urls": {
-        "Donate to Hoffi": "https://paypal.me/blutschwert/5"
+        "Hoffi@XenForo": "https://xenforo.com/community/members/hoffi.214/"
     },
     "require": {
         "XF": [
-            2020010,
-            "XenForo 2.2.0+"
+            2030010,
+            "XenForo 2.3.0+"
         ],
-        "php": [
-            "7.2.0",
-            "PHP 7.2.0+"
+        "cv6/Core": [
+            1020070,
+            "[DD] Core AddOn 1.2.0"
         ]
     },
-    "icon": "logo-cv6.png"
+    "icon": "icon-countdown.png"
 }

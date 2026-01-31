@@ -11,17 +11,23 @@
         "version_string": "1.0.0 Alpha 1",
         "hash": "90de0a5c73fd9a67d4d23775ad5f63cf"
     },
+    "cv6_countdown_icon.txt": {
+        "global_cache": false,
+        "version_id": 1000151,
+        "version_string": "1.0.1 Release Candidate 1",
+        "hash": "ea2a96eeccf00302ef460e740e820ab6"
+    },
     "cv6_custom.txt": {
         "global_cache": false,
         "version_id": 1000010,
         "version_string": "1.0.0 Alpha",
         "hash": "8e5ee7f6b6b895f1a2958c707b3c2b2d"
     },
-    "cv6_do_not_display_countdown.txt": {
+    "cv6_display_countdown.txt": {
         "global_cache": false,
-        "version_id": 1000051,
-        "version_string": "1.0.0 Release Candidate 1",
-        "hash": "77192ca882e37a9a09c8309240379b69"
+        "version_id": 1000151,
+        "version_string": "1.0.1 Release Candidate 1",
+        "hash": "16a8e6a61ad55e9f49d67710ad57ab5f"
     },
     "cv6_explain_countdown.txt": {
         "global_cache": false,
@@ -34,6 +40,12 @@
         "version_id": 1000010,
         "version_string": "1.0.0 Alpha",
         "hash": "71b9466ea28ec0f8419f65457bf88583"
+    },
+    "cv6_no_enddate_for_countdown.txt": {
+        "global_cache": false,
+        "version_id": 1000151,
+        "version_string": "1.0.1 Release Candidate 1",
+        "hash": "fc565cced39cba4094502ac401238b12"
     },
     "cv6_no_or_default_styling.txt": {
         "global_cache": false,

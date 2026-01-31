@@ -4,6 +4,6 @@
     "execution_order": 10,
     "enabled": true,
     "action": "str_replace",
-    "find": "<xf:radiorow name=\"display_image\" value=\"{$notice.display_image}\"",
+    "find": "<xf:radiorow name=\"display_image\" value=\"{$notice}\"",
     "replace": "<xf:macro name=\"cv6_notice_macros::countdown\" arg-notice=\"{$notice}\" />\n$0"
 }

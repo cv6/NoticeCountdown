@@ -5,13 +5,15 @@
         font-weight: bold;
         &:before {
             .m-faBase();
-            .m-faContent(@fa-var-calendar-day);
+            .m-faIcon(@fa-var-calendar-day);
 		}
     }
+
     &.cv6-countdown--badge {
         .xf-badge();
         padding: @xf-paddingSmall @xf-paddingMedium;
     }
+    
     &.cv6-countdown--plate,
     &.cv6-countdown--bigplate {
         font-weight: bold;  
@@ -23,6 +25,7 @@
         border-radius: @xf-borderRadiusMedium;
         border: @xf-borderSize @xf-borderColor;
     }
+
     &.cv6-countdown--bigplate {
         font-size: 3em;
         display: block;

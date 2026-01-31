@@ -1,0 +1,2 @@
+The is no end date set. Please add a date in the page criteria tab.<br />
+Setting: <strong>Current date and time is before</strong>

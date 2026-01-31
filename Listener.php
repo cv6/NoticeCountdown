@@ -12,6 +12,7 @@ class Listener
     public static function noticeEntityStructure(\XF\Mvc\Entity\Manager $em, \XF\Mvc\Entity\Structure &$structure)
     {
         $structure->columns['cv6_countdown'] = ['type' => Entity::STR, 'default' => NULL];
+        $structure->columns['cv6_countdown_icon'] = ['type' => Entity::STR, 'default' => NULL];
     }
 
 }

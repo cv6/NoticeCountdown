@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <class_extensions>
-  <extension from_class="XF\Admin\Controller\Notice" to_class="cv6\NoticeCountdown\XF\Admin\Controller\Notice" execute_order="10" active="1"/>
+  <extension from_class="XF\Admin\Controller\NoticeController" to_class="cv6\NoticeCountdown\XF\Admin\Controller\NoticeController" execute_order="10" active="1"/>
   <extension from_class="XF\NoticeList" to_class="cv6\NoticeCountdown\XF\NoticeList" execute_order="10" active="1"/>
 </class_extensions>

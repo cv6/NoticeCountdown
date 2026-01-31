@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template_modifications>
   <modification type="admin" template="notice_edit" modification_key="cv6_nc_add_countdown_field" description="Add countdown options" execution_order="10" enabled="1" action="str_replace">
-    <find><![CDATA[<xf:radiorow name="display_image" value="{$notice.display_image}"]]></find>
+    <find><![CDATA[<xf:radiorow name="display_image" value="{$notice}"]]></find>
     <replace><![CDATA[<xf:macro name="cv6_notice_macros::countdown" arg-notice="{$notice}" />
 $0]]></replace>
   </modification>

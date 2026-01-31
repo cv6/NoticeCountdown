@@ -19,6 +19,7 @@ class Setup extends AbstractSetup
 	{
 		$this->schemaManager()->alterTable('xf_notice', function (Alter $table) {
 			$table->addColumn('cv6_countdown', 'varchar',50)->setDefault(NULL)->nullable();
+			$table->addColumn('cv6_countdown_icon', 'varchar', 50)->setDefault(NULL)->nullable();
 		});		
 	}
 
@@ -27,6 +28,14 @@ class Setup extends AbstractSetup
 	{
 		$this->schemaManager()->alterTable('xf_notice', function (Alter $table) {
 			$table->dropColumns('cv6_countdown');
+			$table->dropColumns('cv6_countdown_icon');
+		});
+	}
+
+	public function upgrade1000151Step1()
+	{
+		$this->schemaManager()->alterTable('xf_notice', function (Alter $table) {
+			$table->addColumn('cv6_countdown_icon', 'varchar',50)->setDefault(NULL)->nullable();
 		});
 	}
 

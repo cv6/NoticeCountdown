@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="admin" title="cv6_notice_macros" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:macro name="countdown" arg-notice="!">
+  <template type="admin" title="cv6_notice_macros" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[<xf:macro id="countdown" arg-notice="!">
 	<xf:css src="public:cv6_countdown.less" />
 	<xf:checkboxrow 
 		label="{{ phrase('cv6_include_countdown') }}"
 		explain="{{ phrase('cv6_explain_countdown') }}  {$notice.cv6_countdown}"
 	>
-		<xf:option value="no" label="{{ phrase('cv6_do_not_display_countdown') }}" selected="{{ ( $notice.cv6_countdown=='no' || $notice.isInsert() ) ? '' : 'selected' }}" data-hide="true">
+		<xf:option value="no" label="{{ phrase('cv6_display_countdown') }}" selected="{{ ( $notice.cv6_countdown=='no' || $notice.isInsert() ) ? '' : 'selected' }}" data-hide="true">
 			<xf:dependent>
 				<xf:radio name="cv6_countdown" value="{$notice.cv6_countdown}"> 
 					<xf:option value="default" label="{{ phrase('cv6_no_or_default_styling') }}" />
 					<xf:option value="plate" label="{{ phrase('cv6_plate') }}" />
 					<xf:option value="badge" label="{{ phrase('cv6_badge') }}" />
-					<xf:option value="icon" label="{{ phrase('cv6_with_icon') }}" />
 					<xf:option value="custom" label="{{ phrase('cv6_custom') }}" />
 					<xf:option value="bigplate" label="{{ phrase('cv6_bigplate') }}" />
 				</xf:radio>
 			</xf:dependent>
 		</xf:option>
 	</xf:checkboxrow>
+
+	<xf:macro id="cv6_fa_icon::cv6_inputIcon" 
+		arg-target="countdown-icon" 
+		arg-name="cv6_countdown_icon"
+		arg-label="{{ phrase('cv6_countdown_icon') }}" 
+		arg-hint="{{ phrase('cv6_including_fa') }}" 
+		arg-value="{{ $notice.cv6_countdown_icon ?: '' }}"
+		arg-stylechooser="{{ ['style','rotation', 'animation'] }}"
+		/>
+
+	<hr class="formRowSep" />
 </xf:macro>]]></template>
-  <template type="public" title="cv6_countdown.less" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[// display definition
+  <template type="public" title="cv6_countdown.less" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[// display definition
 .cv6-countdown {
     
     &.cv6-countdown--icon {
         font-weight: bold;
         &:before {
             .m-faBase();
-            .m-faContent(@fa-var-calendar-day);
+            .m-faIcon(@fa-var-calendar-day);
 		}
     }
+
     &.cv6-countdown--badge {
         .xf-badge();
         padding: @xf-paddingSmall @xf-paddingMedium;
     }
+    
     &.cv6-countdown--plate,
     &.cv6-countdown--bigplate {
         font-weight: bold;  
@@ -45,6 +57,7 @@
         border-radius: @xf-borderRadiusMedium;
         border: @xf-borderSize @xf-borderColor;
     }
+
     &.cv6-countdown--bigplate {
         font-size: 3em;
         display: block;
