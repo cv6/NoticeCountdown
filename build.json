@@ -1,7 +1,4 @@
 {
-    "exec": [
-        "mkdir -p _releases && echo '{title} version {version_string} ({version_id}) built at' $(date) >> _releases/built.txt"
-    ],
     "exclude": [
         "_docs",
         "_releases",
